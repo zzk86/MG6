@@ -1,2 +1,2 @@
 # MG6
-
+I built a small platforming level for the cat. I made tiles from the sliced environment sprites, then created a Grid with a Ground tilemap and a Platform tilemap, gave both the right tags and a Tilemap Collider 2D, and added a decoration layer. Seven platforms sit at different heights.The hardest part was letting the cat jump through platforms from below. I check the Rigidbody2D's vertical velocity each frame and disable the collider while it is positive, so the cat only lands when it starts falling. For the rat, colliding with an object tagged "Attack" spawns five baby rats, shrinks the mother, and plays an explosion that cycles yellow, red, and blue. The baby rats rotate on the Z axis so they spin left and right without flipping out of the screen.
